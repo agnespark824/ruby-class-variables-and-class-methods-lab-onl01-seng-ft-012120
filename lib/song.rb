@@ -31,8 +31,7 @@ class Song
   def self.genre_count
     genre_hash = {}
     @@genres.uniq.each do |i|
-      genre_hash[i] 
-      new_array = @@genres.select{|elements| elements = i}
+      genre_hash[i] = @@genres.select{|elements| elements = i}.size
     binding.pry
   end
     genre_hash

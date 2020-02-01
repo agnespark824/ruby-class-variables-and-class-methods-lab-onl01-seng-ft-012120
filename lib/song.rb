@@ -32,7 +32,7 @@ class Song
     genre_hash = {}
     @@genres.uniq.each do |i|
       genre_hash[i] 
-      new_array = @@genres.find_all{|elements| elements = i}
+      new_array = @@genres.select{|elements| elements = i}
     binding.pry
   end
     genre_hash

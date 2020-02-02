@@ -32,7 +32,6 @@ class Song
     genre_hash = {}
     @@genres.uniq.each do |i|
       genre_hash[i] = @@genres.select{|elements| elements == i}.size
-    binding.pry
   end
     genre_hash
   end
